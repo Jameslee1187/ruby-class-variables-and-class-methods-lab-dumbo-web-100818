@@ -36,8 +36,8 @@ class Song
         if k.has_key?
           v += 1
         end
+        return k, v
       end
-      
     end
 
 end
