@@ -31,5 +31,13 @@ class Song
       @@genres.uniq
     end
     
+    def self.genre_count
+      @@genres.each do |k, v|
+        if k.has_key?
+          v += 1
+        end
+      end
+      
+    end
 
 end
